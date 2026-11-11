@@ -21,7 +21,7 @@ window.PORTAFOLIO = {
     email: "desmosedit@gmail.com",
     // ⚠️ PENDIENTE: reemplaza las X por el número real (Cuba: +53 y 8 dígitos, ej. "+53 5123 4567").
     // Mientras tenga X se ve en la página pero el botón no abre WhatsApp. Vacío = no se muestra.
-    whatsapp: "+53 5XXX XXXX",
+    whatsapp: "+53 59806236",
     nacionalidad: "Cubano", // con "Cubano"/"Cuba" se muestra la bandera de Cuba
     ubicacion: "", // opcional, ej. "La Habana, Cuba"
     redes: {
