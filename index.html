@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Desmos · Editor de video para reels, TikTok, YouTube y anuncios</title>
+  <meta name="description" content="Desmos, editor de video especializado en reels, TikTok, YouTube y anuncios para redes. Videos con ritmo, hooks y subtítulos que retienen la atención y generan resultados.">
+  <meta name="theme-color" content="#06051a">
+  <meta name="color-scheme" content="dark">
+
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <!-- Open Graph (al publicar en GitHub Pages, cambia og:image por la URL completa) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Desmos · Editor de video">
+  <meta property="og:description" content="Reels, TikTok, YouTube y anuncios que atrapan en los primeros segundos.">
+  <meta property="og:image" content="assets/img/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ============ INTRO (una vez por sesión) ============ -->
+  <div class="intro" id="intro" aria-hidden="true">
+    <video class="intro__video" src="assets/video/intro.mp4" muted playsinline preload="auto"></video>
+    <div class="intro__brand">
+      <span class="intro__name">DESMOS</span>
+      <span class="intro__role">Editor de video</span>
+    </div>
+    <button class="intro__skip" type="button" tabindex="-1">Saltar intro</button>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="progress" aria-hidden="true"><span class="progress__bar" id="progress"></span></div>
+    <nav class="nav container" aria-label="Principal">
+      <a class="brand" href="#inicio" aria-label="Desmos, ir al inicio">
+        <img class="brand__mark" src="assets/img/apple-touch-icon.png" alt="" width="36" height="36">
+        <span class="brand__name">DESMOS</span>
+      </a>
+
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#trabajos">Trabajos</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li data-requires="precios"><a href="#precios">Precios</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li class="nav__links-cta"><a class="btn btn--primary" href="#contacto">Cotizar mi video</a></li>
+      </ul>
+
+      <a class="btn btn--primary btn--sm nav__cta" href="#contacto">Cotizar</a>
+      <button class="nav__toggle" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Abrir menú">
+        <span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero__media" aria-hidden="true">
+        <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="assets/img/hero-poster.jpg">
+          <source src="assets/video/hero-bg.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="hero__frame" aria-hidden="true">
+        <span class="corner corner--tl"></span><span class="corner corner--tr"></span>
+        <span class="corner corner--bl"></span><span class="corner corner--br"></span>
+        <span class="hero__rec"><i></i>REC</span>
+        <span class="hero__tc" id="timecode">00:00:00:00</span>
+        <span class="hero__fmt">DESMOS · EDIT</span>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow hero__anim" style="--d:0">Editor de video · Contenido para redes</p>
+          <h1 class="hero__title hero__anim" style="--d:1">Hey, soy <span class="text-grad">Desmos</span>.</h1>
+          <p class="hero__lead hero__anim" style="--d:2">
+            Edito <strong>reels, TikToks, videos de YouTube y anuncios</strong> que atrapan en los primeros
+            segundos, retienen hasta el final y generan resultados reales.
+          </p>
+          <div class="hero__actions hero__anim" style="--d:3">
+            <a class="btn btn--primary" href="#trabajos">
+              Ver trabajos
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10-6.5-10-6.5Z" fill="currentColor"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#contacto">Cotizar mi video</a>
+          </div>
+          <ul class="hero__facts hero__anim" style="--d:4">
+            <li><span>Plataformas</span>Reels · TikTok · YouTube · Ads</li>
+            <li><span>Formatos</span>9:16 · 1:1 · 16:9</li>
+            <li><span>Software</span>CapCut</li>
+          </ul>
+        </div>
+
+        <div class="hero__emblem hero__anim" style="--d:2">
+          <img src="assets/img/logo.webp" alt="Logo de Desmos: pantera con claqueta y cámara" width="720" height="720" fetchpriority="high">
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#trabajos" aria-label="Bajar a trabajos"><span></span></a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Reels</span><i>✦</i><span>TikTok</span><i>✦</i><span>YouTube</span><i>✦</i><span>Shorts</span><i>✦</i>
+        <span>Anuncios</span><i>✦</i><span>Subtítulos</span><i>✦</i><span>Color</span><i>✦</i><span>Sonido</span><i>✦</i>
+        <span>Reels</span><i>✦</i><span>TikTok</span><i>✦</i><span>YouTube</span><i>✦</i><span>Shorts</span><i>✦</i>
+        <span>Anuncios</span><i>✦</i><span>Subtítulos</span><i>✦</i><span>Color</span><i>✦</i><span>Sonido</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ============ TRABAJOS ============ -->
+    <section class="section" id="trabajos">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="label"><span>01</span>Trabajos</p>
+          <h2 class="section__title">Proyectos recientes</h2>
+          <p class="section__lead">Algunos proyectos en los que he trabajado recientemente. Toca cualquier video para verlo completo.</p>
+        </header>
+
+        <div class="filters" id="filters" role="group" aria-label="Filtrar trabajos" hidden></div>
+        <div class="work-grid" id="work-grid"></div>
+        <p class="section__foot reveal">¿Quieres ver más ejemplos de tu nicho? <a href="#contacto">Pídemelos</a> y te los comparto.</p>
+      </div>
+    </section>
+
+    <!-- ============ CASOS ============ -->
+    <section class="section section--alt" id="casos">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="label"><span>02</span>Casos</p>
+          <h2 class="section__title">Detrás de cada proyecto</h2>
+          <p class="section__lead">Qué se pidió, qué hice y qué se logró.</p>
+        </header>
+        <div class="cases" id="cases"></div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICIOS ============ -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="label"><span>03</span>Servicios</p>
+          <h2 class="section__title">¿Qué hago?</h2>
+          <p class="section__lead">Me adapto al estilo de cada cliente y a la plataforma donde se publica el contenido.</p>
+        </header>
+
+        <div class="services">
+          <article class="service service--wide reveal">
+            <div class="service__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10.5 9.5v5l4-2.5-4-2.5Z"/></svg></div>
+            <h3>Reels y TikTok</h3>
+            <p>Ediciones rápidas y dinámicas, con cortes precisos, música, subtítulos y elementos visuales pensados para la retención y el watch time.</p>
+            <div class="timeline" aria-hidden="true">
+              <div class="timeline__ruler"></div>
+              <div class="timeline__track"><b>V1</b><span style="--w:22%"></span><span style="--w:14%"></span><span style="--w:30%"></span><span style="--w:18%"></span></div>
+              <div class="timeline__track timeline__track--txt"><b>T1</b><span style="--w:12%;--m:6%"></span><span style="--w:16%"></span><span style="--w:10%;--m:8%"></span><span style="--w:20%"></span></div>
+              <div class="timeline__track timeline__track--audio"><b>A1</b><span class="wave"></span></div>
+              <i class="timeline__head"></i>
+            </div>
+          </article>
+
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="4"/><path d="M10.5 9.5v5l4-2.5-4-2.5Z"/></svg></div>
+            <h3>Videos para YouTube</h3>
+            <p>Estructura del contenido, eliminación de partes lentas, mejora de audio y gráficos simples para que tus videos sean más claros y entretenidos.</p>
+          </article>
+
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h3l6 4V6L7 10H4Z"/><path d="M16.5 9a4 4 0 0 1 0 6M19 6.5a7.5 7.5 0 0 1 0 11"/></svg></div>
+            <h3>Anuncios para redes</h3>
+            <p>Piezas cortas optimizadas para Instagram, Facebook o TikTok Ads, enfocadas en captar atención en los primeros segundos y llevar a la acción.</p>
+          </article>
+
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M12 3a9 9 0 0 1 0 18"/></svg></div>
+            <h3>Color y corrección</h3>
+            <p>Ajuste de color y exposición para dar un look profesional y coherente con la identidad de tu marca o canal.</p>
+          </article>
+
+          <article class="service reveal">
+            <div class="service__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="3"/><path d="M6 15h5M13 15h5M6 11.5h3M11 11.5h7"/></svg></div>
+            <h3>Subtítulos y textos</h3>
+            <p>Subtítulos quemados, textos llamativos y llamadas a la acción para mejorar la comprensión y la conversión.</p>
+          </article>
+
+          <article class="service service--cta reveal">
+            <div>
+              <h3>¿Tienes algo diferente en mente?</h3>
+              <p>Cuéntame tu idea, tu plataforma y tu objetivo. Te digo cómo lo editaría.</p>
+            </div>
+            <a class="btn btn--primary" href="#contacto">Hablemos</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESO ============ -->
+    <section class="section section--alt" id="proceso">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="label"><span>04</span>Proceso</p>
+          <h2 class="section__title">Así trabajamos</h2>
+          <p class="section__lead">Comunicación constante durante todo el proceso, para que el resultado sea exactamente lo que buscas.</p>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal" style="--d:0">
+            <span class="step__tc">00:00</span>
+            <h3>Brief</h3>
+            <p>Me cuentas el objetivo del video (vender, educar, entretener o posicionar), la plataforma y tus referencias.</p>
+          </li>
+          <li class="step reveal" style="--d:1">
+            <span class="step__tc">00:05</span>
+            <h3>Material</h3>
+            <p>Me envías tus tomas, logo y recursos. Si hace falta, te oriento sobre qué grabar.</p>
+          </li>
+          <li class="step reveal" style="--d:2">
+            <span class="step__tc">00:10</span>
+            <h3>Edición</h3>
+            <p>Ritmo, hook, música, efectos, color y subtítulos, adaptados a tu público y a tu formato.</p>
+          </li>
+          <li class="step reveal" style="--d:3">
+            <span class="step__tc">00:15</span>
+            <h3>Revisión y entrega</h3>
+            <p>Ajusto según tus comentarios y te entrego el archivo final listo para publicar.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PRECIOS ============ -->
+    <section class="section" id="precios" hidden>
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="label"><span>05</span>Precios</p>
+          <h2 class="section__title">Precios claros</h2>
+          <p class="section__lead">Paga por video según la duración, o ahorra con un paquete.</p>
+        </header>
+        <div class="price-tiles" id="price-tiles"></div>
+        <h3 class="packs__title reveal">Paquetes</h3>
+        <div class="packs" id="packs"></div>
+        <p class="price-note reveal" id="price-note"></p>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE MÍ ============ -->
+    <section class="section section--alt" id="sobre-mi">
+      <div class="container about">
+        <div class="about__visual reveal">
+          <div class="about__frame">
+            <img src="assets/img/logo.webp" alt="" width="720" height="720" loading="lazy">
+            <span class="corner corner--tl"></span><span class="corner corner--tr"></span>
+            <span class="corner corner--bl"></span><span class="corner corner--br"></span>
+          </div>
+        </div>
+        <div class="about__body">
+          <header class="section__head section__head--left reveal">
+            <p class="label"><span>06</span>Sobre mí</p>
+            <h2 class="section__title">Edito con un objetivo claro</h2>
+          </header>
+          <p class="about__text reveal">
+            Como editor de video me gusta entender el objetivo de cada pieza (vender, educar, entretener o posicionar una marca)
+            y adaptar la edición al público y a la plataforma. Cuido especialmente el ritmo, la imagen y la claridad del mensaje,
+            y mantengo una comunicación constante durante el proceso para que el resultado sea exactamente lo que buscas.
+          </p>
+          <ul class="pillars reveal">
+            <li><strong>Ritmo</strong><span>Cortes que mantienen la atención de principio a fin.</span></li>
+            <li><strong>Imagen</strong><span>Color, encuadre y gráficos con look profesional.</span></li>
+            <li><strong>Mensaje</strong><span>Subtítulos y textos que se entienden sin sonido.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="section contact" id="contacto">
+      <div class="container">
+        <div class="contact__panel reveal">
+          <p class="label label--center"><span>07</span>Contacto</p>
+          <h2 class="contact__title">¿Hacemos tu <span class="text-grad">próximo video</span>?</h2>
+          <p class="contact__lead">¿Quieres que trabajemos juntos en tu próximo video o en el contenido de tu canal o marca? Escríbeme y te respondo lo antes posible.</p>
+          <div class="contact__actions" id="contact-actions"></div>
+          <ul class="socials" id="socials"></ul>
+          <p class="contact__sign">¡Espero saber de ti!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="brand" href="#inicio" aria-label="Desmos, volver arriba">
+        <img class="brand__mark" src="assets/img/apple-touch-icon.png" alt="" width="28" height="28" loading="lazy">
+        <span class="brand__name">DESMOS</span>
+      </a>
+      <p>© <span id="year">2026</span> Desmos · Editor de video para redes</p>
+      <a class="footer__top" href="#inicio">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lb-title" hidden>
+    <div class="lightbox__backdrop" data-close></div>
+    <div class="lightbox__dialog">
+      <div class="lightbox__stage" id="lb-stage"></div>
+      <div class="lightbox__bar">
+        <div>
+          <p class="lightbox__title" id="lb-title"></p>
+          <p class="lightbox__meta" id="lb-meta"></p>
+        </div>
+        <span class="lightbox__count" id="lb-count"></span>
+      </div>
+    </div>
+    <button class="lightbox__close" type="button" data-close aria-label="Cerrar video">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+    <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Video anterior">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Video siguiente">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+    </button>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
